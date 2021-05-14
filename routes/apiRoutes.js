@@ -1,29 +1,41 @@
-
+const express = require('express');
 const path = require('path');
 const fs = require('fs');
+const app = express();
+const array = require('../db/notes')
 
+//EXPRESS IS SIMPLY CONNECTING THE TWO 
 
 module.exports = (app) => {
-//html routes
-app.get('/notes', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/notes.html'));
-});
 
-app.get('*', (req, res) => {
-  res.sendFile(path.join(__dirname, '../public/index.html'));
-});
 //api routes
-app.post('./public/assets/notes', (req, res) => {
-  const notes = req.body;
-
-  notes.push(newNote);
-
-  res.json(newNote);
+app.get('/api/notes', (req, res) => {
+ fs.readFile('../db/db.json', 'utf8', (err, data) => {
+   if(err) throw err;
+   res.json(JSON.parse(data));
+ });
 });
 
-app.delete
+
+app.post('/api/notes', (req, res) => {
+  fs.readFile('../db/db.json', 'utf8', (err, data) => {
+    if(err) throw err;
+    const oldNotes = JSON.parse(data);
+    oldNotes.push(req.body);
+    fs.writeFile('../db/db.json', JSON.stringify(oldNotes), (err, data) => {
+      if(err) throw err;
+      res.json(data);
+    })
+
+    // const oldNotes = JSON.parse(data);
+    // const newNotes = [req.body, ... oldNotes]
+  });
+});
 
 
+app.delete('/api/notes/:id', (req, res) => {
+  
+});
 
 
 
