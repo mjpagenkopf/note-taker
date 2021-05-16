@@ -3,8 +3,8 @@
 
 const path = require('path');
 const fs = require('fs');
-// ROUTING
 
+// ROUTING
 module.exports = (app) => {
   // => HTML GET Requests
   // Below code handles when users "visit" a page.

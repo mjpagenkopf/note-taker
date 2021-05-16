@@ -1,14 +1,14 @@
 // DEPENDENCIES
 const express = require('express');
 const fs = require('fs');
-const path = require('path');
+// const path = require('path');
 // const routes = require('./routes');
-const notes = require('./db/notes');
-const apiRoutes = require('./routes/apiRoutes');
+// const notes = require('./db/notes');
+// const apiRoutes = require('./routes/apiRoutes');
 // EXPRESS CONFIGURATION
 const app = express();
-var data = fs.readFileSync('./db/db.json');
-var savedNotes = JSON.parse(data);
+// var data = fs.readFileSync('./db/db.json');
+
 
 // Sets an initial port. 
 const PORT = process.env.PORT || 8080;

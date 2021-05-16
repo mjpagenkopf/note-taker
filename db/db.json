@@ -1,7 +1,14 @@
 [
-    {
-        "title":"Test Title",
-        "text":"Test text"
-    }
+  {
+    "title": "Test Title",
+    "text": "Test text"
+  },
+  {
+    "title": "My note",
+    "text": "this is my note"
+  },
+  {
+    "title": "Second Note",
+    "text": "This is my second note for the test. "
+  }
 ]
-
