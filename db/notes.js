@@ -6,3 +6,13 @@ const app = express();
 
 
 
+// const readFileAsync = util.promisify(fs.readFile);
+
+// read() {
+//     return readFileAsync('/db.json', 'utf8');
+// }
+
+
+
+
+

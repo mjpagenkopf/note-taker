@@ -2,8 +2,7 @@ const express = require('express');
 // const path = require('path');
 const fs = require('fs');
 const app = express();
-// const array = require('../db/db.json');
-
+const notes = require('../db/notes');
 //EXPRESS IS CONNECTING API Routes to getNotes, saveNotes, deleteNotes from public/assets/js/index.js
 
 module.exports = (app) => {
@@ -36,16 +35,16 @@ module.exports = (app) => {
 
   //from public/assets/js/index.js --> the deleteNote function
   app.delete('/api/notes/:id', (req, res) => {
-    const delNote = JSON.parse(req.params.id);
-    fs.readFile('./db/db.json', 'utf8', (err, data) => {
-      if (err) throw err;
-      var oldNotes = JSON.parse(data);
-      oldNotes = oldNotes.filter(val => val.id !== delNote)
-    })
-    fs.writeFile('./db/db.json', JSON.stringify(oldNotes, null, 2), (err, data) => {
-        if (err) throw err;
-        res.json(data);
+  const delNote = JSON.parse(req.params.id);
+  fs.readFile('./db/db.json', 'utf8', (err, data) => {
+  if (err) throw err;
+  var oldNotes = JSON.parse(data);
+  //   oldNotes = oldNotes.filter(val => val.id !== delNote)
+  //   })
+  //   fs.writeFile('./db/db.json', JSON.stringify(oldNotes, null, 2), (err, data) => {
+  //       if (err) throw err;
+  //       res.json(data);
       
-    });
-  });
+  //   });
+  // });
 };
