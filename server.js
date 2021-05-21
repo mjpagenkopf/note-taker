@@ -1,7 +1,7 @@
 // DEPENDENCIES
 const express = require('express');
 const fs = require('fs');
-// const path = require('path');
+const path = require('path');
 // const routes = require('./routes');
 // const notes = require('./db/notes');
 // const apiRoutes = require('./routes/apiRoutes');
