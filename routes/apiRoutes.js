@@ -7,21 +7,30 @@ const notes = require('../db/notes');
 
 module.exports = (app) => {
   
-  app.get('/api/notes', (req, res) => res.json(notes)); 
+    app.get('/api/notes', (req, res) => {
+      notes()
+    }
 
-  app.get('/api/notes', (req, res) => {
-    res.status(200).json({success: true, data: notes})
-  })
-  
+    app.get('/api/notes', (req, res) => {
+      res.status(200).json({success: true, data: notes})
+    });
+    
+    app.post('/api/notes', (req, res) => {
+      res.send('POST')
+    var newNote = notes.push(req.body);
+
+    console.log(newNote)
+  });
+
+    app.delete('/api/notes/:id', (req, res) => {
+
+
+    })
 
 
 
-  app.post('/api/notes', (req, res) => {
 
-  notes.push(req.body);
-
-  console.log(notes)
-}
+};
 
 
 

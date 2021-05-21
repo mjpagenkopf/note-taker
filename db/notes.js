@@ -5,18 +5,27 @@ const util = require('util');
 const readFileAsync = util.promisify(fs.readFile);
 
 
-async function notes() {
-    try {
-        const notes = await readFileAsync('./db/db.json', 'utf8');
-            console.log(notes)
-        } catch (err) {
-            console.log('Error', err);
-        }
-    }
+function notes() {
+    return readFileAsync('db/db.json', 'utf8');
+}
+
+
+
 notes();
 
 
+// async function notes() {
+//     try {
+//         const notes = await readFileAsync('./db/db.json', 'utf8', (res =>);
+//             console.log(notes)
+//         } catch (err) {
+//             res.
+//             console.log('Error', err);
+//         }
+//     }
 
+
+// notes();
 
 
 // const { readFile, writeFile } = require('fs') = old;
