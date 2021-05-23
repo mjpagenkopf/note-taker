@@ -22,7 +22,7 @@ Must have Node installed as well as npm dependency express. Must use npm's fs. A
 
 ![Open Terminal](./assets/images/terminal.png)
 
-### Install npm and inquirer
+### Install npm and express
 
 ![Install npm](./assets/images/init.png) ![Install express](./assets/images/express.png)
 
@@ -37,7 +37,6 @@ Must have Node installed as well as npm dependency express. Must use npm's fs. A
 ### Enter note title and text. Save notes using save button on top right. Delete notes with trash can
 
 ![Install npm](./assets/images/savednotes.png)
-
 
 ## Contribution Guidelines
 
