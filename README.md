@@ -20,23 +20,23 @@ Must have Node installed as well as npm dependency express. Must use npm's fs. A
 
 ### Open Directory in Integrated Terminal
 
-![Open Terminal](/assets/images/terminal.png)
+![Open Terminal](./assets/images/terminal.png)
 
 ### Install npm and inquirer
 
-![Install npm](/assets/images/init.png) ![Install express](/assets/images/express.png)
+![Install npm](./assets/images/init.png) ![Install express](./assets/images/express.png)
 
 ### Run node in Terminal
 
-![Run Node](/assets/images/server.png)
+![Run Node](./assets/images/server.png)
 
 ### Go to Heroku and on the homepage, click the Get Started button
 
-![Get Started](/assets/images/notetaker.png)
+![Get Started](./assets/images/notetaker.png)
 
 ### Enter note title and text. Save notes using save button on top right. Delete notes with trash can
 
-![Install npm](/assets/images/savednotes.png)
+![Install npm](./assets/images/savednotes.png)
 
 
 ## Contribution Guidelines
