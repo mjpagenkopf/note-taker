@@ -1,14 +1,17 @@
 [
   {
-    "title": "Test Title",
-    "text": "Test text"
+    "title": "MY FINAL NOTE I HOPE",
+    "text": "will this final note save and work and so I can just be done with this finally?",
+    "id": 1
   },
   {
-    "title": "My note",
-    "text": "this is my note"
+    "title": "I'm adding a new Note ",
+    "text": "this is a note that i am adding to do a final test",
+    "id": 2
   },
   {
-    "title": "Second Note",
-    "text": "This is my second note for the test. "
+    "title": "My Second Note",
+    "text": "This is my second note test",
+    "id": 3
   }
 ]

@@ -2,17 +2,13 @@ const fs = require('fs')
 const util = require('util');
 
 
-const readFileAsync = util.promisify(fs.readFile);
+// const readFileAsync = util.promisify(fs.readFile);
 
+// function notes() {
+//     return readFileAsync('db/db.json', 'utf8');
+// }
 
-function notes() {
-    return readFileAsync('db/db.json', 'utf8');
-}
-
-
-
-notes();
-
+// module.exports = notes();
 
 // async function notes() {
 //     try {
@@ -23,10 +19,7 @@ notes();
 //             console.log('Error', err);
 //         }
 //     }
-
-
 // notes();
-
 
 // const { readFile, writeFile } = require('fs') = old;
 
